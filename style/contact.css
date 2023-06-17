@@ -1,0 +1,60 @@
+#contact{
+    background-color: #FBEEE5;
+    height: 100vh;
+ }
+
+ .contact-text {
+    color: #14463A;
+    font-size: 50px;
+    line-height: 65px;
+ }
+ div .h3-design {
+   color: #14463A;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 20px;
+ }
+
+ #fname {
+   box-sizing: border-box;
+   width: 326px;
+   height: 58px;
+   background: #FFFFFF;
+   border: 1px solid #000000;
+   color: #14463A;
+ }
+
+ #email {
+  box-sizing: border-box;
+  width: 760px;
+  height: 58px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  color: #14463A;
+}
+
+ .submit {
+   width: 200px;
+   height: 78px;
+   background: #14463A;
+   border-radius: 15px;
+   color: #FBEEE5;
+ }
+ .form-control{
+  width: 20%;
+ }
+
+ #message {
+  box-sizing: border-box;
+  width: 760px;
+  height: 118px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  color: #14463A;
+}
+
+#contact-image {
+  position: relative;
+  left: 620px;
+  bottom: 350px;
+}

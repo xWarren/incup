@@ -1,0 +1,45 @@
+#products {
+   background-color:#FBEEE5;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    
+ }
+
+ .products-spacing-height {
+   height: 50px;
+ }
+ .products-spacing-width {
+   width: 20px;
+ }
+
+ .products-text {
+   color: #14463A;
+   font-size: 30px;
+   line-height: 65px;
+}
+
+.card {
+   width: 19rem;
+   height: 25rem;
+   background: #14463A;
+   border-radius: 30px;
+   border: 0px;
+}
+
+.card-title {
+  color: #FBEEE5;
+}
+
+.card-text {
+  color: #FBEEE5;
+}
+
+.btn {
+  background:#FBEEE5;
+  position: absolute;
+  left: 170px;
+  top: 350px;
+  color: #14463A;
+  border-radius: 30px;
+}

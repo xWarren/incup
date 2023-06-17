@@ -1,0 +1,338 @@
+* {
+    font-family: 'Lemon', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#register{
+    background:#14463A;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+ }
+
+ .h1-design {
+    font-size: 80px;
+    line-height: 104px;
+    text-align: center;
+    color: #FBEEE5;
+ }
+
+ .box-border{
+    box-sizing: border-box;
+    border: 1px solid #FBEEE5;
+    border-radius: 30px;
+    position: absolute;
+    width: 100vh;
+    height: 620px;
+    left: 317px;
+    top: 150px;
+ }
+
+.row {
+    text-align: center;
+}
+
+ .emailfield-design {
+    color: #FBEEE5;
+    font-size: 12px;
+    position: relative;
+    right: 190px;
+ }
+
+ .email{
+    width: 426px;
+    height: 58px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+ }
+
+ .passwordfield-design {
+    color: #FBEEE5;
+    font-size: 12px;
+    position: relative;
+    right: 175px;
+ }
+
+ .cpasswordfield-design {
+    color: #FBEEE5;
+    font-size: 12px;
+    position: relative;
+    right: 145px;
+ }
+
+ .loginfield-design {
+    width: 279px;
+    height: 79px;
+    background: #FBEEE5;
+    color: #14463A;
+    border-radius: 15px;
+    position: relative;
+    left: 250px;
+ }
+
+ .account-design {
+    color: #FBEEE5;
+    font-size: 10px;
+    text-align: center;
+ }
+ 
+ .register-design {
+    color: #FBEEE5;
+    font-size: 12px;
+    text-align: center;
+    
+ }
+
+ a {
+    text-decoration: none;
+    color: #FBEEE5;
+ }
+
+ a:hover {
+   color: green;
+ }
+
+ /** Responsive **/
+ @media only screen and (max-width:2500px) {
+    .box-border{
+        left: 600px;
+
+     }
+     .loginfield-design {
+        left: 390px;
+     }
+}
+
+@media only screen and (max-width:2200px) {
+    .box-border{
+        left: 550px;
+
+     }
+     .loginfield-design {
+        left: 390px;
+     }
+}
+
+
+@media only screen and (max-width:2100px) {
+    .box-border{
+        left: 450px;
+
+     }
+     .loginfield-design {
+        left: 390px;
+     }
+}
+
+@media only screen and (max-width:2100px) {
+    .box-border{
+        left: 480px;
+
+     }
+     .loginfield-design {
+        left: 390px;
+     }
+}
+
+@media only screen and (max-width:2000px) {
+    .box-border{
+        left: 420px;
+
+     }
+     .loginfield-design {
+        left: 390px;
+     }
+}
+
+@media only screen and (max-width:1900px) {
+    .box-border{
+        left: 400px;
+
+     }
+     .loginfield-design {
+        left: 390px;
+     }
+}
+
+@media only screen and (max-width:1800px) {
+    .box-border{
+        left: 330px;
+
+     }
+     .loginfield-design {
+        left: 390px;
+     }
+}
+
+@media only screen and (max-width:1700px) {
+    .box-border{
+        left: 300px;
+
+     }
+     .loginfield-design {
+        left: 420px;
+     }
+}
+
+@media only screen and (max-width:1620px) {
+    .box-border{
+        left: 270px;
+
+     }
+     .loginfield-design {
+        left: 420px;
+     }
+}
+
+@media only screen and (max-width:1540px) {
+    .box-border{
+        left: 310px;
+
+     }
+     .loginfield-design {
+        left: 320px;
+     }
+}
+
+
+@media only screen and (max-width:1440px) {
+    .box-border{
+        box-sizing: border-box;
+        border: 1px solid #FBEEE5;
+        border-radius: 30px;
+        position: absolute;
+        width: 100vh;
+        height: 620px;
+        left: 317px;
+        top: 150px;
+
+     }
+     .loginfield-design {
+        left: 250px;
+     }
+}
+
+@media only screen and (max-width:1435px) {
+    .box-border{
+        left: 250px;
+
+     }
+     .loginfield-design {
+        left: 320px;
+     }
+}
+
+@media only screen and (max-width:1270px) {
+    .box-border{
+        left: 170px;
+
+     }
+     .loginfield-design {
+        left: 320px;
+     }
+}
+
+@media only screen and (max-width:1200px) {
+    .box-border{
+        left: 140px;
+
+     }
+     .loginfield-design {
+        left: 320px;
+     }
+     .h1-design {
+        font-size: 50px;
+     }
+}
+
+@media only screen and (max-width:1100px) {
+    .box-border{
+        left: 70px;
+
+     }
+     .loginfield-design {
+        left: 320px;
+     }
+     .h1-design {
+        font-size: 50px;
+     }
+}
+
+@media only screen and (max-width:980px) {
+    .box-border{
+        left: 35px;
+
+     }
+     .loginfield-design {
+        left: 320px;
+     }
+     .h1-design {
+        font-size: 50px;
+     }
+}
+
+@media only screen and (max-width:930px) {
+    .box-border{
+        left:235px;
+        width: 50vh;
+        height: 620px;
+
+     }
+     .loginfield-design {
+        left: 80px;
+     }
+     .h1-design {
+        font-size: 35px;
+     }
+}
+
+@media only screen and (max-width:870px) {
+    .box-border{
+        left:205px;
+        width: 50vh;
+        height: 620px;
+
+     }
+     .loginfield-design {
+        left: 80px;
+     }
+     .h1-design {
+        font-size: 35px;
+     }
+}
+
+@media only screen and (max-width:670px) {
+    .box-border{
+        left:85px;
+        width: 50vh;
+        height: 620px;
+
+     }
+     .loginfield-design {
+        left: 80px;
+     }
+     .h1-design {
+        font-size: 35px;
+     }
+}
+
+@media only screen and (max-width:570px) {
+    .box-border{
+        left:25px;
+        width: 50vh;
+        height: 620px;
+
+     }
+     .loginfield-design {
+        left: 80px;
+     }
+     .h1-design {
+        font-size: 35px;
+     }
+}

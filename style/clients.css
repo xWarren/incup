@@ -1,0 +1,96 @@
+#clients{
+    background-color:#14463A;
+    height: 100vh;
+ }
+ .clients-text {
+    color: #FBEEE5;
+    font-size: 30px;
+    line-height: 65px;
+ }
+ .containers {
+   width: 18rem;
+ }
+ .clients-spacing-height {
+   height: 50px;
+ }
+ .clients-spacing-width {
+   width: 120px;
+ }
+
+ @media only screen and (max-width:1290px) {
+   .clients-text {
+      color: #FBEEE5;
+      font-size: 20px;
+      line-height: 65px;
+   }
+   .containers{
+      width: 25rem;
+      height: 10;
+   }
+   .clients-spacing-height {
+      height: 50px;
+    }
+    .clients-spacing-width {
+      width: 120px;
+    }
+   
+
+ }
+
+ @media only screen and (max-width:2000px) {
+   .clients-text {
+      color: #FBEEE5;
+      font-size: 30px;
+      line-height: 65px;
+   }
+   .containers{
+      width: 15rem;
+      height: 10;
+   }
+   .clients-spacing-height {
+      height: 50px;
+    }
+    .clients-spacing-width {
+      width: 120px;
+    }
+   
+
+ }
+
+ @media only screen and (max-width:1200px) {
+   .clients-text {
+      color: #FBEEE5;
+      font-size: 30px;
+      line-height: 65px;
+   }
+   .containers{
+      width: 15rem;
+   }
+   .clients-spacing-height {
+      height:50px;
+    }
+    .clients-spacing-width {
+      width:50px;
+    }
+
+ }
+
+ @media only screen and (max-width:991px) {
+   .clients-text {
+      color: #FBEEE5;
+      font-size: 20px;
+      text-align: center;
+      line-height: 65px;
+   }
+   .containers{
+      height: 10rem;
+      width: 25rem;
+   }
+   .clients-spacing-height {
+      height:10px;
+    }
+    .clients-spacing-width {
+      width:150px;
+    }
+
+ }

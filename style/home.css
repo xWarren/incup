@@ -1,0 +1,83 @@
+#homes{
+    background:#14463A;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+ }
+
+#ec{
+    position: absolute;
+    width: 307px;
+    height: 253px;
+    left: 250px;
+    bottom: 250px;
+}
+
+.coffeeincup{
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    height: 350px;
+    width: 705px;
+}
+.eclipse{
+    position: absolute;
+    left: 50px;
+    top: 250px;
+    height: 550px;
+    width: 905px;
+}
+
+.incup {
+    position: absolute;
+    left: 519px;
+    bottom: 550px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 120px;
+    color: #FBEEE5;
+ }
+
+ .coffee {
+
+    position: absolute;
+    left: 580px;
+    top: 195px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 90px;
+    color: #FBEEE5;
+ }
+
+ .fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
