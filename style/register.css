@@ -130,16 +130,6 @@
      }
 }
 
-@media only screen and (max-width:2100px) {
-    .box-border{
-        left: 480px;
-
-     }
-     .loginfield-design {
-        left: 390px;
-     }
-}
-
 @media only screen and (max-width:2000px) {
     .box-border{
         left: 420px;
@@ -305,6 +295,21 @@
      .h1-design {
         font-size: 35px;
      }
+}
+
+@media only screen and (max-width:770px) {
+   .box-border{
+       left:155px;
+       width: 50vh;
+       height: 620px;
+
+    }
+    .loginfield-design {
+       left: 80px;
+    }
+    .h1-design {
+       font-size: 35px;
+    }
 }
 
 @media only screen and (max-width:670px) {
