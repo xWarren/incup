@@ -53,6 +53,7 @@ main{
     display: flex;
     justify-content: center;
     overflow: hidden;
+    margin: 0 auto;
  }
 
  .row span {
