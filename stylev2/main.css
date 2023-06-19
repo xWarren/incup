@@ -5,13 +5,31 @@
     font-family: 'Lemon', cursive;
 }
 
+
 .navbar{
    display: flex;
-   background-color: #14463A;
-   justify-content: center;
-   position: relative;
-   padding-block: 20px;
+   flex-direction: row;
+   align-items: center;
+   width: 100%;
+   gap: 20px;
+   justify-content: space-between;
+   position: fixed;
+   top: 0;
+   z-index: 1;
+   padding: 0 5px;
 }
+
+.logo{
+   display: flex;
+   width: 10%;
+   height: 4rem;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .logo img {
+   width: 90%;
+ }
 
 .container {
    margin: 0 auto;
@@ -22,31 +40,49 @@
    flex-direction: row;
    
 }
-.navbar-row h1 {
+
+.navbar-row a{
+   color: var(--text-color);
+   font-weight: bold;
+   font-size: clamp( 12px, 5vw, 16px);
+   padding: 20px 30px;
+   text-decoration: none;
+ }
+ .navbar-row a:active{
+   color: white;
+ }
+ .navbar-row a:hover{
+   color: green;
+ }
+.navbar-row a {
    margin-left: 20px;
    font-size: 15px;
    font-weight: 400;
    color: #FBEEE5;
 }
 
+.menubar{
+   display: none;
+ }
+
 .cup {
    position: relative;
 }
 .cup img {
    position: absolute;
-   top: 650px;
+   top: 450px;
    left: -650px;
 
 }
 
 .cup .coffee {
    position: absolute;
-   top: 330px;
+   top: 150px;
    left: -550px;
 
 }
 
-main{
+#main{
     background:#14463A;
     height: 100vh;
     width: 100wh;
@@ -68,3 +104,31 @@ main{
     font-size: 90px;
  }
  
+
+ .cart {
+   display: flex;
+   width: 10%;
+   height: 4rem;
+   justify-content: center;
+   align-items: center;
+ }
+ .cart img {
+   width: 20%;
+ }
+
+ .spacing {
+   margin-right: 40px;
+ }
+
+
+ @media screen and (max-width: 988px ) {
+   .menubar{
+     display: block;
+   }
+   .navbar-row{
+     display: none;
+   }
+   .cart {
+      display: none;
+   }
+ }

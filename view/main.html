@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <link rel="stylesheet" href="..\stylev2\main.css">
     <link rel="stylesheet" href="..\stylev2\product.css">
+    <link rel="stylesheet" href="..\stylev2\clients.css">
+    <link rel="stylesheet" href="..\stylev2\contact_us.css">
 </head>
 <body>
 
@@ -20,20 +22,29 @@
              <img src="..\assets\logo.png">
         </div>
         <div class="navbar-row">
-            <h1> Home</h1>
-            <h1> Products</h1>
-            <h1> Clients</h1>
-            <h1> Contact Us</h1>
+         <a href="#main">Home</a>
+         <a href="#products">Products</a>
+         <a href="#clients">Clients</a>
+         <a href="#contact-us">Contact Us</a>
         </div>
-        <div class="cart">       
-            <img src="..\assets\cart.png">
-            <img src="..\assets\user.png">
+        <div class="cart">
+                <img src="..\assets\cart.png">
+                <div class="spacing"></div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><img src="..\assets\user.png" class="user"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Profile</a>
+                      <a href="#">Logout</a>
+                    </div>
+              </div>
        </div>
+       <img class="menubar" src="..\assets\more.png" alt="">
     </div>
+
     </div>
 
     <!-- Home Section -->
-    <main class="main">
+    <main id="main">
         <div class="row">
             <span>InCup<br><h2>Coffee</h2></span>
         </div>
@@ -44,13 +55,69 @@
     </main>
 
        <!-- Product Section -->
-    <section class="product">
-        <div class="product-row">
+    <section id="products">
             <span>Our Products</span>
-        </div>
-      
+    </section>
+
+      <!-- Clients Section -->
+      <section id="clients">
+        <div class="clients-row">
+            <span>Clients that trust us</span>
         </div>
     </section>
 
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <div class="container">
+        <div class="contact-row">
+            <span>Get in touch</span>
+            <p>24/7 We will answer your questions and problems</p>
+        </div>
+    </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>        
+    /** Dropdown **/
+    $(document).ready(function(){
+          $('profile').on('change', function(){
+            var demovalue = $(this).val(); 
+              $("div.myDiv").hide();
+              $("#show"+demovalue).show();
+          });
+      });
+    /** Active Navbar **/
+      const li = document.querySelectorAll("a");
+      const sec = document.querySelectorAll("section");
+
+      function activeMenu() {
+        let len = sec.length;
+        while(--len && window.scrollY + 97 < sec[len].offsetTop) {} 
+        li.forEach(ltx => ltx.classList.remove("active"));
+        li[len].classList.add("active");
+        li.setAttribute("aria-current", "page");
+      }
+      activeMenu();
+      window.addEventListener("scroll", activeMenu);
+      /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
 </body>
 </html>
