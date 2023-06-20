@@ -1,20 +1,79 @@
 
 #products{
     background:#FBEEE5;
-    height: 100vh;
+    min-height: 100vh;
     width: 100wh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto;
-    
+    overflow: hidden;
  }
+
+.row-products {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: flex-start;
+}
+
+.content-section .card {
+  flex: 1;
+  margin: 20px 20px;
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  background-color: #14463A;
+}
+
+.content-section .card img {
+  width: 100%;
+  align-self: center;
+  height: 15rem;
+}
+
+.content-section .card h2 {
+  margin: 15px 0px 0 15px;
+  font-size: 15px;
+  color: #FBEEE5;
+}
+
+.content-section .card p {
+  margin: 5px 0 0 5px;
+  font-size: 13px;
+  padding: 0px 10px;
+  color: #fbeee5e6;
+}
+
+.content-section .card button {
+  margin: 5px 5px 5px 105px;
+  font-size: 12px;
+  padding: 0px 10px;
+  border-radius: 30px;
+  height: 40px;
+  color: #14463A;
+  background-color: #FBEEE5;
+}
+
+.content-section .card button:hover{
+  border-color: #14463A;
+  color: #FBEEE5;
+  background-color: #14463A;
+}
 
 
 #products span{
-    font-size: 50px;
+  font-size: clamp(20px, 10vw, 35px);
+  width: 100%;
     font-weight: 400;
     color: #14463A;
     padding-top: 55px;
+    margin-left: 90px;
  }
 
 
@@ -25,6 +84,8 @@
    border: none;
    cursor: pointer;
  }
+ 
+
  
  .dropbtn .user {
    width: 35px;
@@ -66,3 +127,12 @@
    flex-direction: column;
    margin-right: 120px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+  }
+
+}
+  

@@ -17,6 +17,7 @@
    top: 0;
    z-index: 1;
    padding: 0 5px;
+   background: rgba(255, 255, 255, 0.4);
 }
 
 .logo{
@@ -52,13 +53,13 @@
    color: white;
  }
  .navbar-row a:hover{
-   color: green;
+   color: rgba(20, 70, 58, 0.75);
  }
 .navbar-row a {
    margin-left: 20px;
    font-size: 15px;
    font-weight: 400;
-   color: #FBEEE5;
+   color: #14463A;
 }
 
 .menubar{
@@ -66,46 +67,64 @@
  }
 
 .cup {
-   position: relative;
-
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
+
 .cup img {
-   position: absolute;
-   top: 450px;
-   left: -650px;
-
-}
-
-.cup .coffee {
-   position: absolute;
-   top: 130px;
-   left: -550px;
+   width: 40%;
+   
 }
 
 #main{
     background:#14463A;
     height: 100vh;
     width: 100wh;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+    display: flex;   
     margin: 0 auto;
  }
 
+.row {
+   width: 50%;
+}
+
+.row p {
+   color: #FBEEE5;
+   font-weight: 400;
+   text-align: flex-start;
+   font-size: clamp(7px, 15vw, 15px);
+   margin-top: 30px;
+   margin-left: 90px;
+}
  .row span {
     color: #FBEEE5;
     font-weight: 400;
-    text-align: center;
+    text-align: flex-start;
     font-size: clamp(45px, 15vw, 120px);
+    margin-top: 30px;
+    margin-left: 90px;
  }
 
  .row h2 {
     color: #FBEEE5;
     font-weight: 400;
-    text-align: center;
+    text-align: flex-start;
     font-size: clamp(40px, 10vw, 80px);
  }
  
+ .row button {
+   width: 227px;
+   height: 57px;
+   background: #FBEEE5;
+   border-radius: 10px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 33px;
+   color: #14463A;
+
+ }
 
  .cart {
    display: flex;
@@ -136,20 +155,9 @@
    }
  }
 
- @media screen and (max-width: 750px ) {
+ @media screen and (max-width: 960px ) {
    .cup img {
-      position: absolute;
-      top: 450px;
-      left: -620px;
-   
-   }
-   
-   .cup .coffee {
-      position: absolute;
-      top: 110px;
-      left: -450px;
-      width:550px;
-      height: 650px;
+      display: none;
    }
  }
 
@@ -171,12 +179,8 @@
  }
 
 
- @media screen and (max-width: 520px ) {
-   .cup img {
-      display: none;
-   }
-   
-   .cup .coffee {
-      display: none;
-   }
+
+ footer {
+   height: 5vh;
+   background-color: #14463A;
  }
