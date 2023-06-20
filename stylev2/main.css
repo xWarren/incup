@@ -67,6 +67,7 @@
 
 .cup {
    position: relative;
+
 }
 .cup img {
    position: absolute;
@@ -77,9 +78,8 @@
 
 .cup .coffee {
    position: absolute;
-   top: 150px;
+   top: 130px;
    left: -550px;
-
 }
 
 #main{
@@ -95,13 +95,15 @@
  .row span {
     color: #FBEEE5;
     font-weight: 400;
-    font-size: 120px;
+    text-align: center;
+    font-size: clamp(45px, 15vw, 120px);
  }
 
  .row h2 {
     color: #FBEEE5;
     font-weight: 400;
-    font-size: 90px;
+    text-align: center;
+    font-size: clamp(40px, 10vw, 80px);
  }
  
 
@@ -114,6 +116,7 @@
  }
  .cart img {
    width: 20%;
+   height: auto;
  }
 
  .spacing {
@@ -121,7 +124,7 @@
  }
 
 
- @media screen and (max-width: 988px ) {
+ @media screen and (max-width: 990px ) {
    .menubar{
      display: block;
    }
@@ -129,6 +132,51 @@
      display: none;
    }
    .cart {
+      display: none;
+   }
+ }
+
+ @media screen and (max-width: 750px ) {
+   .cup img {
+      position: absolute;
+      top: 450px;
+      left: -620px;
+   
+   }
+   
+   .cup .coffee {
+      position: absolute;
+      top: 110px;
+      left: -450px;
+      width:550px;
+      height: 650px;
+   }
+ }
+
+ @media screen and (max-width: 600px ) {
+   .cup img {
+      position: absolute;
+      top: 450px;
+      left: -580px;
+   
+   }
+   
+   .cup .coffee {
+      position: absolute;
+      top: 70px;
+      left: -380px;
+      width:450px;
+      height: 690px;
+   }
+ }
+
+
+ @media screen and (max-width: 520px ) {
+   .cup img {
+      display: none;
+   }
+   
+   .cup .coffee {
       display: none;
    }
  }
