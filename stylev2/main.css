@@ -83,6 +83,7 @@
     width: 100wh;
     display: flex;   
     margin: 0 auto;
+    position: relative;
  }
 
 .row {
@@ -133,10 +134,23 @@
    justify-content: center;
    align-items: center;
  }
- .cart img {
-   width: 20%;
+.cart a {
+   width: 100%;
    height: auto;
- }
+}
+.cart span {
+   background-color: red;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #FBEEE5;
+   padding: 2px 5px;
+   margin-bottom: 20px;
+   margin-right: 10px;
+
+}
+
 
  .spacing {
    margin-right: 40px;

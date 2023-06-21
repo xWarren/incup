@@ -28,7 +28,8 @@
          <a href="#contact-us">Contact Us</a>
         </div>
         <div class="cart">
-                <img src="..\assets\cart.png">
+                <a href="cart.html"><img src="..\assets\cart.png"></a>
+                <span>0</span>
                 <div class="spacing"></div>
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn"><img src="..\assets\user.png" class="user"></button>
@@ -103,6 +104,27 @@
         <div class="contact-row">
             <span>Get in touch</span>
             <p>24/7 We will answer your questions and problems</p>
+            <form>
+              <div class="row">
+                <h2>First Name:</h2>
+                <div class="col">
+                  <input type="text" class="form-control" name="firstname">
+                </div>
+                <h2>Last Name:</h2>
+                <div class="col">
+                  <input type="password" class="form-control" name="pswd">
+                </div>
+                <h2>Email:</h2>
+                <div class="col">
+                  <input type="email" class="form-control" name="email">
+                </div>
+                <h2>Message:</h2>
+                <div class="col">
+                  <textarea rows="4" cols="50" name="message" id="message" form="usrform" maxlength="200" class="textmessage"></textarea>
+                </div>
+              </div>
+            </form>
+            <img src="..\assets\contact\incup-contact.png"  class="contact-image">
         </div>
     </div>
     </section>
@@ -111,49 +133,8 @@
     <!-- Footer Section -->
   <footer>Hello</footer>
 
-
+    <script src="../stylev2/nav.js"></script>
+    <script src="../stylev2/product.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>        
-    /** Dropdown **/
-    $(document).ready(function(){
-          $('profile').on('change', function(){
-            var demovalue = $(this).val(); 
-              $("div.myDiv").hide();
-              $("#show"+demovalue).show();
-          });
-      });
-    /** Active Navbar **/
-      const li = document.querySelectorAll("a");
-      const sec = document.querySelectorAll("section");
-
-      function activeMenu() {
-        let len = sec.length;
-        while(--len && window.scrollY + 97 < sec[len].offsetTop) {} 
-        li.forEach(ltx => ltx.classList.remove("active"));
-        li[len].classList.add("active");
-        li.setAttribute("aria-current", "page");
-      }
-      activeMenu();
-      window.addEventListener("scroll", activeMenu);
-      /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-    </script>
 </body>
 </html>

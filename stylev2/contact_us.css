@@ -4,21 +4,25 @@
     height: 100vh;
     width: 100wh;
     display: flex;
-    justify-content: start;
-    
+    justify-content: flex-start;
+    overflow: hidden;
+    margin: 0 auto;
+
  }
 
  .contact-row {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-top: 30px;
+   margin-left: 10px;
 
  }
 .contact-row span{
-    font-size: 50px;
-    font-weight: 400;
-    color: #14463A;
-    padding-top: 55px;
+   font-size: clamp(20px, 10vw, 35px);
+   font-weight: 400;
+   color: #14463A;
+   padding-top: 55px;
 
  }
 
@@ -27,4 +31,43 @@
     font-weight: 400;
     color: rgba(20, 70, 58, 0.75);
     padding-top: 5px;
+ }
+
+ .contact-row div {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+ }
+
+ .contact-row h2{
+   font-size: clamp(10px, 10vw, 15px);
+   font-weight: 400;
+   color: rgba(20, 70, 58, 0.75);
+   padding-top: 5px;
+}
+
+.textmessage {
+   width: 150%;
+}
+
+
+.container {
+   position: relative;
+}
+
+ .contact-image {
+   width:40%;
+   height: auto;
+   position: absolute;
+   margin-left: 55%;
+   margin-top: 15%;
+   display: block;
+
+ }
+
+ @media screen and (max-width: 1398px) {
+   .contact-image{
+      display: none;
+   };
+   
  }
