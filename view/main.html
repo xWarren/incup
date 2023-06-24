@@ -45,7 +45,7 @@
     </div>
 
     <!-- Home Section -->
-    <main id="main">
+    <main class="main reveal" id="main">
       <div class="cup">
         <div class="row">
             <span>InCup<br><h2>Coffee</h2></span>
@@ -59,7 +59,7 @@
     </main>
 
        <!-- Product Section -->
-       <section id="products">
+       <section class="products reveal" id="products">
       <div class="row-products">
         <span>Taste our Blends</span>
          <div class="content-section">
@@ -88,18 +88,37 @@
             <button onclick="">Order Now</button>
           </div>
         </div>
-    </section>
-
-      <!-- Clients Section -->
-      <section id="clients">
-        <div class="clients-row">
-            <span>Clients that trust us</span>
+        <div class="row-text-product">
+          <h2>"If your Monday morning is lagging, our caffine will wake you up!"</h2>
         </div>
     </section>
 
+        <!-- Clients Section -->
+
+    <section class="clients reveal" id="clients">
+      <div class="sponsor">
+        <div class="mx-auto" style="height: 20px;">
+        </div>
+        <div class="all-texts">
+            <h2 class="clients-text">Clients that trust us</h2>
+        </div>
+        <div class="clients-row">
+          <img src="..\assets\clients\bpas 1.png " alt="">
+          <img src="..\assets\clients\bpas 2.png " alt="">
+          <img src="..\assets\clients\bpas 3.png " alt="">
+        </div>
+        <div class="clients-row">
+          <img src="..\assets\clients\bpas 4.png " alt="">
+          <img src="..\assets\clients\bpas 5.png " alt="">
+          <img src="..\assets\clients\bpas 6.png " alt="">
+        </div>
+      </div>
+      </section>
+      
+
 
     <!-- Contact Us Section -->
-    <section id="contact-us">
+    <section class="contact-us reveal" id="contact-us">
         <div class="container">
         <div class="contact-row">
             <span>Get in touch</span>
@@ -108,20 +127,24 @@
               <div class="row">
                 <h2>First Name:</h2>
                 <div class="col">
-                  <input type="text" class="form-control" name="firstname">
+                  <input type="text" class="form-control" id="validationDefault01" required>
                 </div>
                 <h2>Last Name:</h2>
                 <div class="col">
-                  <input type="password" class="form-control" name="pswd">
+                  <input type="password" class="form-control" name="pswd" required>
                 </div>
                 <h2>Email:</h2>
                 <div class="col">
-                  <input type="email" class="form-control" name="email">
+                  <input type="email" class="form-control" name="email" required>
                 </div>
                 <h2>Message:</h2>
                 <div class="col">
-                  <textarea rows="4" cols="50" name="message" id="message" form="usrform" maxlength="200" class="textmessage"></textarea>
+                  <textarea rows="4" cols="50" name="message" id="message" form="usrform" maxlength="200" class="textmessage" required></textarea>
                 </div>
+              </div>
+              <br>
+              <div class="col-12">
+                <button class="btn" type="submit">Submit</button>
               </div>
             </form>
             <img src="..\assets\contact\incup-contact.png"  class="contact-image">

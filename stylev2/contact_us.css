@@ -1,5 +1,5 @@
 
-#contact-us{
+.contact-us{
     background:#FBEEE5;
     height: 100vh;
     width: 100wh;
@@ -65,7 +65,56 @@
 
  }
 
+ .form-control {
+   border-color: black;
+   border-radius: 10px;
+ }
+
+
+.btn {
+   background-color: #14463A;
+   color: #FBEEE5;
+   width: 20%;
+   height: 7vh;
+   border-radius: 15px;
+   border-color: #14463A;
+}
+
+.btn:hover {
+   background-color: #14463A;
+   color: #FBEEE5;
+   border-color: #14463A;
+
+}
+
  @media screen and (max-width: 1398px) {
+   .contact-image{
+      width:30rem;
+      height: auto;
+      position: absolute;
+      margin-left: 55%;
+      margin-top: 20%;
+      display: block;
+   };
+   
+ }
+
+ 
+ @media screen and (max-width: 1200px) {
+   .contact-image{
+      width: 25rem;
+      height: auto;
+      position: absolute;
+      margin-left: 55%;
+      margin-top: 29%;
+      display: block;
+   };
+   
+ }
+
+ 
+ 
+ @media screen and (max-width: 991px) {
    .contact-image{
       display: none;
    };
